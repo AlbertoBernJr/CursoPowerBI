@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------
-|   Criar relações ente Tabelas [ Product ], [ Reseller] e [ Sales ]   |
+|   Criar relações ente Tabelas [ Product ], [ Reseller] e [ Sales ]  |
 ------------------------------------------------------------------------
 
 > o esperado é que cada categoria de produto exiba as vendas daquela categoria. No entanto, como não tem uma relação modelo entre as 
