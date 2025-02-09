@@ -1,1 +1,28 @@
-d dkdk 
+------------------------------------------------------------------------
+|   Criar relações ente Tabelas [ Product ], [ Reseller] e [ Sales ]   |
+------------------------------------------------------------------------
+
+> O esperado é que cada categoria de produto exiba as vendas daquela categoria. No entanto, como não tem uma relação modelo entre as 
+  tabelas, a quantidade de vendas não esta filtrada -> adicionar uma relação para prover filtros entre as tabelas
+
+> [ report view ] -> na ambiente de [ data ] -> selecionar [ sales ] + [ category ] -> serão exibidas 2 colunas
+
+> O esperado é que cada categoria de produto exiba as vendas daquela categoria. No entanto, como não tem uma relação modelo entre as 
+  tabelas, a quantidade de vendas não esta filtrada.
+
+> Objetivo: adicionar uma relação para prover filtros entre as tabelas
+
+> selecionar [ model view ] -> [ manage relations ] -> verificar que nehuma relação foi criada -> [ new relationship ] -> configurar a 
+  relação da tabela [ product ] para a tabela [ sales ] -> notar que as colunas [ ProductKey ] das duas tabelas estão selecionadas -> 
+  [ Save ] 
+>> As colunas foram selecionadas porque elas compartilham o mesmo nome e tipo de dados. Voce pode encontrar colunas com diferentes nomes.
+>> Tipo de cardinalidade é [1:*] = a coluna [ ProductKey ] da tabela [Product] contem valores unicos
+>> Tipo de direção do filtro é [ single ] = os filtros se propagam de um lado para vários outros. Os filtros aplicados na tabela 
+  [ Product ] se propagarão para a tabela [ Sales ], mas não em posição oposta.
+>> Relação ativa = relações ativa propagam filtros
+>> Relações inativas =  não propagam filtros. Podem existir quando há muitas relações entre as tabelas
+
+> outros modos de criar uma relação: arrastar a coluna [ resellerKey ] da tabela [ reseller ] para a coluna [ ResellerKey ] na tabela 
+  [ Sales ]
+
+> Após a criação da relação entre as tabelas [ Product ] e [sales ], os filtros estão propagados pra a tabela [ Sales ]
