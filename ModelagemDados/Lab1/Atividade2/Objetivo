@@ -1,1 +1,11 @@
+-----------------------------------------------------
+|   configurar a tabela [ Product ] com hierarquia   |
+------------------------------------------------------
+
+> opção [ model view ] -> procurar pelo painel de [ data ] -> aumente a tabela [ Product ] -> botao direito na coluna [ Category ] -> 
+  [ create hiearchy ] -> renomear a nova categoria criada para [ Products ] -> painel [ Properties ]  -> ir ate [ hiearchy] -> adiocionar 
+  [ Products ] e [ Subcategory ]
+
+> adicionando as colunas [  Background Color Format ] e [ Font Color Format column. ] para dentro de uma pasta chamada [ Formatting ]
+
 
