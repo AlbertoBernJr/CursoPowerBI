@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------------
+|  configurar a tabela [ sales ] com descrições atualizadas, formatação e resumo  |
+----------------------------------------------------------------------------------
+
+> selecione a tabela [ sales ] -> coluna [ cost ] -> painel [ properties ] -> em [ description ] -> escrever [ based on standard cost ]
+
+> coluna [ quantity ] -> painel [ properties ] -> expandir a opção [ formatting ] -> em [ thousands separator ] -> mover para a opção [ yes ]
+
+> coluna [ unit price ] -> painel [ properties ] -> expandir a opção [ formatting ] -> em [ decimal places ] -> selecionar a opção [ 2 ] -> expandir a opção [ advanced ] -> em [ summarize by ] -> selecionar [ average ]
+>> por padrão, as colunas numéricas resumem valores por soma dos dados
