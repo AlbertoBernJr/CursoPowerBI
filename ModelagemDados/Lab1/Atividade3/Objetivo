@@ -1,0 +1,12 @@
+---------------------------------------------------
+|  configurar a tabela [ region ] com hierarquia  |
+---------------------------------------------------
+
+> na tabela [ region ] -> clicar na coluna [ region ] + botao direito -> [ create hierachy ] -> renomear 
+  a nova hierarquia para [ regions ] -> painel [ Properties ]  -> ir ate [ hiearchy] -> adiocionar [ Group ] e [ Country ] e 
+  [ region ] -> [ apply level changes ]
+
+> fora da hierarquia, clicar na coluna [ country ] -> painel [ properties ] -> expandir a opção [ advanced ] -> 
+  em [ data category ] -> selecionar [ country/region ]
+>> categorizar dados pode servir de dica para o designer ou ajuda o power bi na hora de carregar um mapa usando 
+    a informação
