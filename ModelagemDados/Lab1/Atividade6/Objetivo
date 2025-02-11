@@ -1,0 +1,11 @@
+----------------------------------------------------------------------------------------------------------
+|  atualizar multiplas colunas usando uma massiva atualização (bulk apdate), esconder e formatar colunas  |
+-----------------------------------------------------------------------------------------------------------
+
+> painel [ dados ] -> expandir todas as tabelas -> selecionar ctrl + [ productKey ] + [ SalesTerritoryKey] , ... -> 
+  painel [ properties ] -> em [ is hidden ] -> marcar [ yes ]
+>> as colunas serão escondidas porque serão usadas para relacionamentos, bruto nivel de segurança ou 
+    calculo de logica
+
+> na tabela [ product ], selecionar [ standard cost ] + ctrl -> tabela [ sales ], selecionar [ cost ] + [sales] -> 
+  no painel de [properties] -> na opção [formatting] -> em [decimal places] -> opção [ 0 ]
