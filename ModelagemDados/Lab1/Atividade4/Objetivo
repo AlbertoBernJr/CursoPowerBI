@@ -1,0 +1,19 @@
+-----------------------------------------------------
+|  configurar a tabela [ reseller ] com hierarquia  |
+-----------------------------------------------------
+
+> na tabela [ reseller ] -> clicar na coluna [ reseller ]  -> botão direito -> [ create hierarchy ] -> 
+  renomear a nova hierarquia criada para [ resellers ] -> no painel [ properties ] -> ir ate [ hierarchy ] -> 
+  adicionar [ reseller ] + [ business type ] -> [ apply level changes ]
+
+> na tabela [ reseller ] -> clicar na coluna [ country-region ]  -> botão direito -> [ create hierarchy ] -> 
+  renomear a nova hierarquia criada para [ geography ] -> no painel [ properties ] -> ir ate [ hierarchy ] -> 
+  adicionar [ reseller ] + [ state-province ] + [ country region ] + [ city ] -> [ apply level changes ]
+
+> selecionar a coluna [ country-region ] -> painel [properties ] -> em [ data category ] -> selecione 
+  [ country/regions ]
+
+> selecionar a coluna [ state-province ] -> painel [properties ] -> em [ data category ] -> selecione 
+  [ state or province ]
+
+> selecionar a coluna [ city ] -> painel [properties ] -> em [ data category ] -> selecione [ city ]
