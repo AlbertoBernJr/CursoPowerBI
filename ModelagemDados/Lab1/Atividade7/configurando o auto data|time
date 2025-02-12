@@ -1,0 +1,6 @@
+> em [ report view ] -> painel [ data ] -> tabela [ sales ] -> coluna [ OrderDate ] -> 
+  [ Data Hierarchy ] -> as categorias [ year ], [ quarter ], ... foram criadas automaticamente 
+  por uma configuração padrão
+
+> desativar o [ auto date/time ] -> canto superior -> [ file ] -> [ options and settings ] -> 
+  [ options ]  -> [ data load ] -> [ time intelligence ] -> desmarcar [ auto date/time ]
