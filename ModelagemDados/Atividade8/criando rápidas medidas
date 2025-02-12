@@ -1,0 +1,14 @@
+> criar 2 medidas rápidas para calcular lucro e margem de lucro
+
+> tabela [ sales ] -> botao direito -> [ new quick measure ] -> [ calculations ] -> 
+  lista -> em [ mathematical operations ] -> [ subtraction ] -> expandir a tabela 
+  [ sales ] -> arrastar a coluna [ sales ] para [ base value ] -> arrastar a coluna 
+  [ cost ] para [value to subtract ] -> [ add ]
+
+> medidas são indicadas pelo ícone de calculadora
+
+> renomeia o [ sales minus cost ] para [ profit ]
+
+> [ calculations ] -> lista -> em [ mathematical operations ] -> [ division ] -> 
+  arraste a coluna [ profit ] para [ numerator ] -> arraste [ sales ] para [ denominator ] -> 
+  renomear a medida para [ proft margin ]
