@@ -1,0 +1,11 @@
+> criar uma relação muitos-muitos entre as tabelas [ salesperson ] e [ sales ]
+
+> modo [ report view ] -> painel [ data ] -> selecionar [ sales | sales ] + [ salesperson | salesperson ] -> 
+  A tabela criada mostra as vendas feitas por cada [salesperson]. A outra relação é que alguns [ salesperson] 
+  pertencem a uma ou mais [ regions ]. Em adição, [ sales ragions ] podem ter várias [ salesperson ] ligadas a ela
+
+> modo [ report view ] -> ponha juntas as tabelas [ SalesPersonRegion ], [Region ] e [ SalesPerson] -> clique e arraste 
+  a coluna [ SalesPerson|EmployeeKey ] para [ SalesPersonRegion | EmployeeKey ] -> 2 cliques em cima da linha relação 
+  entre as tabelas [ region ] e [SalesPersonRegion ] -> descer a janela -> em [ cross filter direction ] -> selecione 
+  [ both ] -> marque [ apply security filter in both directions ]
+>> [ < tabela > | < coluna > ]
