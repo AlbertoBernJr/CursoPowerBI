@@ -1,0 +1,27 @@
+> excluir a coluna 10
+
+> excluir linhas vazias -> [ pagina inicial ] -> [ reduzir linhas ] -> [remover linhas ] -> 
+  [ remover linhas em branco ] 
+
+> juntar as colunas [ nome ] e [ sobrenome ] em 1 só -> guia [ transformar ] -> clicar na coluna [ nome ] + 
+  tecla ctrl + coluna [ sobrenome ] -> [ mesclar colunas ] -> em [ seperador ], selecionar [ espaço ] -> em ]
+  [ novo nome ], usar [ nome completo ]
+
+> desfazendo a mescla de colunas -> lado esquerdo -> em [ etapas aplicadas ] -> excluir [ colunas mescladas ]
+
+> separar a coluna [ loja ] em 2 -> guia [ transformar ] -> selecionar coluna [ loja ] -> [ dividir coluna ] -> 
+  em [ selecione o delimitador ], selecionar [ personalizado ] e digitar [  - ] (<espaço> + [-] + <espaço>) -> [ok]  
+
+> trocar o nome da coluna [ loja ] que foi separada em 2 -> 2 cliques em cada coluna e por o nome: [ cidade ] e 
+  [ estado ]
+
+> substituir as expressoes [ M ] e [ F ] por [ Masculino ] e [ Feminino ] -> guia [ transformar ] -> [ 1 -> 2 ] -> 
+  [ substituir valores ] -> em [ valor a ser localizado ], digitar [ M ] -> em [ substituir por ], digitar 
+  [ Masculino ]
+
+> criar uma coluna que multiplique a quantidade de produtos que uma pessoa comprou e o valor de cada produto -> 
+  guia [ adicionar coluna ] -> selecionar a coluna [ preço unitario ] + tecla ctrl + [ qud vendida ] -> ir no icone 
+  de calculadora -> selecionar [multiplicação] -> 2x clique na coluna [ multiplicação ] que foi criada -> renomeie 
+  para [Faturamento ]
+
+> salvar as modificações que foram feitas e adicionar ao power BI -> guia [ pagina inicial ] -> [ fechar e aplicar ] 
