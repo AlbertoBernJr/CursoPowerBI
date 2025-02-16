@@ -1,0 +1,9 @@
+> somar todos os valores da coluna [ faturamento ] para saber o total da empresa
+
+> criando o painel do faturamento total -> painel lateral -> [ exibição de relatório ] -> painel direito de 
+  [visualização ] -> icone de um retangulo com os numero [ 1 2 3 ] = cartão -> redimensionar o cartão -> painel 
+  direito de [ dados ] -> expandir a tabela [ vendas ] -> clicar na coluna [ Faturamento ] e arrastar até [ campos ] 
+  que aparece no painel de [ visualização ]
+
+> adicionando simbolo de cifrão ao visual de cartão -> clicar na coluna [ faturamento ] -> aba [ ferramentas de coluna ] -> 
+  ir na seta do [ $ ] e procurar por [ R$ kaingang ]
