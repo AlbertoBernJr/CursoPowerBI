@@ -1,0 +1,9 @@
+> definir qual foi o 1°, 2°, ... ( ranking ) -> será usado o gráfico de barras
+
+> painel [ visualizações ] -> selecionar [ gráfico de barras empilhadas ] -> arrarstar e soltar a coluna 
+  [ Faturamento ] no [ Eixo x ] -> arrastar e soltar a coluna [ produto ] no [ eixo y ]
+
+> editando o visual -> clicar no visual -> no painel [ visualizações ] -> perto do nome [ formatar visual ] -> 
+  icone de uma barra com pincel [ formatar seu visual ] -> ir editando o visual -> ativar a opção [ rotulos de dados ] 
+  para ter uma descrição do número que representa a barra -> opção [ opções ] -> [ posição ] -> selecionar 
+  [ extremidade interna ]
