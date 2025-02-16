@@ -1,0 +1,9 @@
+> aproveitando a formatação anterior -> ctrl C + ctrl V no cartão anterior ->  painel direito de [ dados ] -> 
+  expandir a tabela [ vendas ] -> clicar na coluna [ produtos ] e arrastar até [ campos ] que aparece no painel 
+  de [ visualização ] -> será mostrado o 1° produto em ordem alfabética -> ir no painel [ filtros ] que esta a 
+  esquerda do painel [ visualização ] -> clicar na coluna [ produto ] e arrastar até [adiconar os campos ] em 
+  [ filtro neste visual ] -> em [ tipo de filtro ], selecionar [ n superior ] -> em [ mostar itens ], digitar [ 1 ] -> 
+  arrastar a coluna [ Qtd vendida ] para [ por valor ] -> [ aplicar filtro ]
+
+> renomear a legenda -> painel [visualização ] -> [ campos ] -> clicar 2x em [primeiro produto] e renomar para 
+  [ produto mais vendido ]
