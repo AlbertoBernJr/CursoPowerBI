@@ -1,0 +1,8 @@
+> apresentar informações em um mapa -> painel [ visualizações] -> gráfico [ mapa ] 
+  (icone de globinho) -> arrastar a coluna [ Estado] para a opção [localização] -> 
+  arrastar a coluna [faturamento] para a opção [tamanho] -> quanto maior a bolinha, maior 
+  foi o faturamento 
+
+> para aumentar o tamanho das bolhas ->  painel [ visualizações] -> icone [formatar visual] -> 
+  opção [bolhas] -> ajustar o tamanho das bolhas -> opção [ configurações do mapa] -> [ controles ] 
+  -> [ botoes de zoom]
