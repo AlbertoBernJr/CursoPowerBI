@@ -1,0 +1,22 @@
+> editar o nome da planilha para [ BaseVendas ] -> lado direito -> em [ propriedades ] -> [ nome] -> 
+  digitar [ BaseVendas]
+
+> apagar a coluna 10 -> clicar no titulo [coluna 10] -> aba [pagina inicial] -> [gerenciar colunas] -> 
+  [remover colunas] -> [remover colunas]
+
+> excluir linhas vazias -> aba [pagina inicial] -> [reduzir linhas] -> [remover linhas] -> 
+  [remover linhas em branco]
+
+> separar a coluna [ localidade ] em 2 -> guia [ transformar ] -> selecionar coluna [ localidade ] -> 
+  [ dividir coluna ] -> em [ selecione o delimitador ], selecionar [ personalizado ] e digitar [  - ] 
+  (<espaço> + [-] + <espaço>) -> [ok]
+
+> criar uma coluna que multiplique a quantidade de produtos que uma pessoa comprou e o valor de cada 
+  produto -> guia [ adicionar coluna ] -> selecionar a coluna [ preço unitario ] + tecla ctrl + 
+  [ qtd vendida ] -> ir no icone de calculadora -> selecionar [multiplicação] -> 2x clique na coluna 
+  [ multiplicação ] que foi criada -> renomeie para [Faturamento ]  
+
+> editando o nome do cliente -> guia [adicionar coluna] -> [coluna de exemplos] -> na 1° linha = 
+  [ Vicente P.] -> na 2° linha = [Marlon L.]
+
+> salvar e aplicar as modificações -> aba [pagina inicial] -> [fecha e aplica]
