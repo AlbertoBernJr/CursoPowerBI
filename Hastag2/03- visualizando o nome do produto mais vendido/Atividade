@@ -1,0 +1,13 @@
+>  [exibição do relatorio] -> painel [visuais] -> para representar uma única informação, usar o  
+  visual [cartão] (retangulo com os numeros 123) -> arrastar a coluna [produto] para [campos] do 
+  cartão
+
+> mostrar o produto mais vendido -> painel [filtros] -> em [filtros neste visual] -> arrastara   
+  coluna [produtos] e soltar nesse campo -> em [tipo de filtro], seleiconar [n superior] -> em 
+  [mostrar itens], digitar [1] -> arrastar a coluna [qtd vendas] para a parte [por valor] -> 
+  [aplicar filtro]
+  >> por padrão, é mostrado o 1° produto em ordem alfabetica
+
+> copiar a formatação do cartão anterior -> aba [pagina inicial] -> em [area de transferencia] -> 
+  clicar no cartão [faturamento total] -> [pincel de formação] -> clicar no cartão [produto mais 
+  vendido]
