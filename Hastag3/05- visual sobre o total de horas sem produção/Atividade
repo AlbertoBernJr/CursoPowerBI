@@ -1,0 +1,17 @@
+> se a coluna [ ocorrencia ] esta vazia, estava produzindo. Se a coluna esta com alguma 
+  informação, não estava produzindo
+
+> realizar uma conta baseada em uma condição: somar o total de horas SE a [ocorrencia] estiver 
+  com algum valor
+  >> função [ CALCULATE() ]
+  >> [conta desejada] + [ , ] + [condições]
+
+> boas práticas: quando abrir a função [CALCULATE() ] pular uma linha para por as expressoes
+  >> usar o [shift] + [enter]
+
+> formula DAX:
+  TotalHorasParadas=CALCULATE(
+    SUM('BaseProdução'[Total Horas]),
+    'BaseProdução'[Ocorrência]<>BLANK()
+  )
+  >> diferente = [ <> ]
