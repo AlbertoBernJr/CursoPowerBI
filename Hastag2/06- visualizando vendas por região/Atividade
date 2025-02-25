@@ -1,0 +1,16 @@
+> grafico globo = colocará uma bolinha na região que teve maior numero
+
+> grafico mapa = adicionará cores nas regiões que tiverem maiores resultados
+
+> para o gráfico de globo funcionar, deve-se espcificar a categoria da coluna
+  >> modo [exibição de tabela] -> clicar no título da coluna [continente] -> aba [ferramentas 
+      de coluna] -> em [categoria de dados], selecionar [continente] -> clicar no titulo da 
+      coluna [pais] -> em [categoria de dados] -> selecionar [pais]
+
+> em [exibição de relatorios] -> gráfico [mapa] (icone de globo) -> coluna [continente] para 
+  [localização] -> coluna [faturamento] para [tamanho da bolha]
+
+> aumentar o tamanho das bolhas -> painel [visualização] -> [bolhas] -> editar o tamanho
+
+> copiar a formatação do gráfico [faturamento por marca] -> clicar no gráfico -> aba [pagina 
+  inicial] -> pincel de formatação -> clicar no gráfico do mapa
