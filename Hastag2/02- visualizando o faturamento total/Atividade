@@ -1,0 +1,17 @@
+> [exibição do relatorio] -> painel [visuais] -> para representar uma única informação, usar o 
+  visual [cartão] (retangulo com os numeros 123) -> arrastar a coluna [faturamento] para [campos] 
+  do cartão
+
+> para reallizar outra operação sem ser de somar os valores de [faturamento] -> na parte de 
+  [campos] do visual [cartão] onde foi arrastada a coluna [faturamento] -> clicar na seta para 
+  baixo -> escolher outras opções de calculo
+
+> editando o visual do cartão -> painel [visualização] -> dos 3 primeiros icones -> clicar no 
+  do meio (formatar visual)
+  >> alterar a cor de fundo -> [geral] -> [efeitos] -> [tela de fundo] -> editar...
+  >> retirar a legenda de baixo -> [visual] -> desativar [rotulos da categoria]
+  >> adicionar um título no topo -> [geral] -> [titulo] -> em  [texto], digitar [faturamento total] 
+    -> em [cor tela de fundo], selecione a cor preta -> em [cor do texto], selecione a cor branca
+
+> adicionar o [R$] -> clicar na coluna [faturamento] -> aba [ferramentas da coluna] -> icone de 
+  [ $] -> seta para baixo -> procurar por [Nheengatu(latino,brasil)]
