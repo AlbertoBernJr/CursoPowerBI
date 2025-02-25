@@ -1,0 +1,27 @@
+> somar os valores das peças aprovadas e das rejeitadas
+
+> usar a barra de formulas DAX = botão direito em qualquer parte da tabela -> [nova medida]
+  >> o nome que vem antes do [=] é o nome da formula
+  >> editar o nome para [TotalAprovado]
+
+> usar a formula de soma [SUM()] para somar todos os valores da coluna [Qtd Aprovada] que está na 
+  tabela [BaseProdução] -> a direita do [=], digitar [ SUM('BaseProdução' [Qtd Aprovada]) ]
+  >> o resultado virou uma coluna da tabela [BaseProdução] e só poderá ser vista quando for adicionada a um visual
+
+> adicionar a coluna [TotalAprovado] para o gráfico [cartão]
+
+> pode-se usar diretamente a coluna [<soma> Qtd Aprovada] em um gráfico [cartão]
+
+> utilizar formula DAX permite reaproveitar em novos calculos
+
+> usar a formula de soma [SUM()] para somar todos os valores da coluna [Qtd Rejeitada] que está 
+  na tabela [BaseProdução] -> a direita do [=], digitar [ SUM('BaseProdução' [Qtd Rejeitada]) ]
+
+> adicionar a coluna [TotalRejeitado] para o gráfico [cartão]
+
+> criando o calculo do [TotalProduzido] -> somar os valores de [TotalAprovado] e [TotalRejeitado] 
+  -> digitar: [ TotalProduzido= [TotalAprovado]+[TotalRejeitado] ]
+  >> a função [SUM()] soma somente os valores de uma coluna
+
+> adicionando seperador de milhar -> clicar na coluna que representa o gráfico -> aba 
+  [ferramentas de medida] -> selecionar o icone de virgula
