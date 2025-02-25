@@ -1,0 +1,7 @@
+> função [ SUM() ] para o total de horas trabalhadas -> ir no [modo de exibição de tabela ] -> 
+  clicar em qualquer lugar da tabela -> botão direito -> [nova medida] -> digitar: 
+  [ TotalHorasTrabalhadas=SUM('BaseProdução'[Total Horas]) ]
+  >> planilha [BaseProdução]
+  >> coluna [Total Horas]
+
+> adicionar a coluna [TotalHorasTrabalhadas] para o gráfico [cartão]
