@@ -1,0 +1,12 @@
+> utilizando o gráfico de barras para determinar o ranking -> arrastar a coluna [faturamento] e 
+  soltar no [eixo x] -> arrastar a coluna [marcas] e soltar no [eixo y]
+
+> adicionando o numero total de vendas ao final da barra -> clicra no gráfico -> no painel 
+  [visualizações], clicar em [formatar seu visual] -> [visual] -> ativar [rotulo de dados] -> 
+  [opções] -> [posição] -> [extremidade interna]
+
+> editando visual -> clicra no gráfico -> no painel [visualizações], clicar em [formatar seu 
+  visual] -> [geral] -> editar...
+
+> quando se clica em uma barra, todo o dashboard é filtrado para apresentar os resultados daquele 
+  objeto selecionado
