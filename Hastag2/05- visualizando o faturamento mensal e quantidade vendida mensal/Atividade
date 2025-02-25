@@ -1,0 +1,4 @@
+> mostrar 2 informações ao mesmo tempo, usar 2 gráficos em 1 -> painel [visualização] -> 
+  selecionar [grafico de colunas empilhadas e linha] -> arrastar a coluna [faturamento] no 
+  [eixo y coluna] -> arrastar a coluna [qtd vendida] no [eixo y linha] -> arrastar a coluna 
+  [data venda] para o [eixo x] -> visualizar somente o [ano] e [mes]
