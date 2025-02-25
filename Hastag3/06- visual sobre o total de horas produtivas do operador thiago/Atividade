@@ -1,0 +1,12 @@
+> realizar uma conta baseada em uma condição: somar o total de horas SE a [ocorrencia] estiver 
+  com algum valor
+  >> função [ CALCULATE() ]
+  >> [conta desejada] + [ , ] + [condições]
+
+Formula DAX: 
+  TotalHorasThiago = CALCULATE(
+    SUM('BaseProdução'[Total Horas]),
+    'BaseProdução'[Ocorrência]<>BLANK(),
+    'BaseProdução'[Operador]="Thiago Costa"
+  )
+  >> condição adicional: [ 'BaseProdução'[Operador]="Thiago Costa" ]
