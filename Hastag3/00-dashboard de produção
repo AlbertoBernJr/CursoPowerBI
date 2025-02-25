@@ -1,0 +1,15 @@
+> contem o histórico de produção dos predutos dentro de uma fábrica
+
+> onde tiver ocorrencia, a produção estava pausada e onde não tem ocorrencia, a produção estava 
+  fluindo normalmente
+
+> conversar com seu gestão para descobrir o que deve ser mostrado no relatório
+
+> vale pesquisar por indicadores de produção no google
+
+> indicadores: Quantidade produzida, Horas trabalhadas, Horas paradas, Horas produtivas, Análise 
+  por Operador, Produtividade e Qualidade
+
+> Data Analysis Expressions = DAX -> criação de funções
+  >> abrir a barra de formulas DAX -> [modo exibição de tabela] -> botão direito em qualquer parte da 
+      tabela -> [nova medida]
