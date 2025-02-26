@@ -1,0 +1,13 @@
+> quantos %, das horas trabalhadas, estamos produzindo algo
+
+> horas produtivas/horas trabalhadas
+
+> painel [exibição de relatorio] -> expandir a tabela que esta no painel [dados] -> botão direito em qualquer coluna -> [nova medida] 
+  ->  DAX: [ %Produtividade= [HorasProdutivas]/[TotalHorasTrabalhadas] ] -> tecla [enter]
+
+> exibindo o valor -> gráfico [cartão] -> arrastar a coluna [%Produtividade] para [campos]
+
+> mudar o valor para ser exibido em % -> clicar na coluna [%Produtividade] -> aba [ferramentas de medida] -> clicar no simbolo [%]
+
+> usar o gráfico [indicador] (icone de velocimentro) para deixar mais intuitivo de entender -> mostrar se esta mais perto do [0%] ou 
+  [100%]
