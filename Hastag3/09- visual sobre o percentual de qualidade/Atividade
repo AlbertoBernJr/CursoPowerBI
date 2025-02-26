@@ -1,0 +1,8 @@
+> do total de peças produzidas, qual foi o % de peças aprovadas
+
+> peças aprovadas/peças produzidas
+
+> painel [exibição de relatorio] -> expandir a tabela que esta no painel [dados] -> botão direito em qualquer coluna -> 
+  [nova medida] ->  DAX: [ %Qualidade= [TotalAprovado]/[TotalRejeitado] ] -> tecla [enter]
+
+> copiar e colar o visual feito na [% Produtividade] -> arrastar a coluna [%Qualidade] para [campos]
