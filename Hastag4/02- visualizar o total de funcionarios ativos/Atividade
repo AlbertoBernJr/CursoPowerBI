@@ -1,0 +1,8 @@
+> contar o numero de contratações que continuam na empresa -> contar todas as linhas que não tem valor na 
+  coluna [Data de Demissao]
+
+> formula DAX: 
+CALCULATE(
+COUNTROWS(BaseFuncionarios),
+BaseFuncionarios[Data de Demissao]=BLANK()
+)
