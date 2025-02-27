@@ -1,7 +1,0 @@
-> cada linha da tabela é uma contratação
-> para saber o total de contratações deve-se saber a quantidade de linhas
-> formula DAX: TotalContratação = COUNTROWS(BaseFuncionarios)
-> ir em [modo exibição de tabela] -> botão direito em qualquer linha -> [nova medida] -> digita a formula 
-  dax
-> ir em [exibição de relatorio] -> criar um grafico [cartão] -> mover a coluna [TotalContratação] para 
-  [campos]
