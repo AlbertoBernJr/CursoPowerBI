@@ -1,0 +1,3 @@
+> total de contratações - total func.Ativos
+
+> formula DAX: Func.Desligados=[TotalContratação]-BaseFuncionarios[Func.Ativos]
