@@ -1,0 +1,18 @@
+> chamados de ToolTip = dicas de ferramenta
+> edição das janelinhas que complementam os seus dados
+> haverá a exbição de um mini dashboard sobre as informações quando o mouse passar por cima do grafico
+
+criar uma nova página no dashboard -> 2x clique no nome da segunda pagina -> renomear para [ToolTip] -> 
+painel [visualizações] -> [formatar pagina de relatorio] -> [infromações da pagina] -> habilitar [permitir 
+usar como dicca  de ferramenta] -> [tela de fundo] -> procurar por [tela de fundo tooltip] -> ajudtar a 
+imagem -> por a transparencia em [0%]
+
+ajustar o tamanho da pagina -> guia [exibição] -> [exibição de pagina] -> [ajustar a pagina] 
+
+sera adicionado os cartões sobre [Func ativos] + [folha salarial] + [quantas horas extras por cargo]
+>> func.ativos = grafico [ cartao] -> coluna [Func.Ativos] para o campo [campos] -> editar o grafico
+>> folha salrial = grafico [ cartao] -> coluna [salário] para o campo [campos]
+>> ranking do cargo com maior hora extra = grafico [barras empilhadas] -> coluna [Horas extras] no 
+[eixo x] -> coluna [cargos] no [eixo y] -> editar grafico -> ir na [pagina 1] -> clicar no grafico 
+[funcionarios ativos por cidade] -> [formatar visual] -> [geral] -> [dicas de ferramentas] -> em [pagina], 
+escolher [ToolTip]
