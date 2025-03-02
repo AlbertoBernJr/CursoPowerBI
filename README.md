@@ -7,3 +7,10 @@ https://mycolor.space/
 
 icones:<br>
 https://www.flaticon.com/
+
+Inspiração para dashboards:<br>
+https://dribbble.com/search/dashboard - inspiração para dashboard<br>
+https://br.pinterest.com/ - inspiração para dashboard
+
+
+Instant eyedropper - ferramenta conta-gota para ser instalada no pc ou pesquisar por uma extensão no navegador
