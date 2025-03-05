@@ -1,0 +1,12 @@
+> somar as movimentações, mas não todas
+> a formula será parecida com a do [TotalRecebimento] -> tipo = "pagamento"
+
+> ficará com sinal negativa porque os valores-movimentação do tipo pagamento são negativos -> adicionar o sinal de [ - ] 
+antes do [CALCULATE]
+
+
+> formula DAX:
+TotalPagamento = -CALCULATE(
+	SUM('Movimentações'[Valor da Movimentação]),
+	'Movimentações'[Tipo]="Pagamento"
+)
