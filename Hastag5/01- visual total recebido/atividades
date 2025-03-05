@@ -1,0 +1,8 @@
+> somar todas as movimentações que forem [recebimento] - condição
+> nao considera as movimentações que forem do tipo [pagamento]
+> formula DAX:
+TotalRecebimentos = CALCULATE(
+	SUM('Movimentações'[Valor da Movimentação]),
+	'Movimentações'[Tipo]="Recebimento"
+)
+> gráfico [cartão] -> coluna [TotalRecebimento] para [campos]
