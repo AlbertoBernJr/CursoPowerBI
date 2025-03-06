@@ -1,0 +1,2 @@
+> Mov.Pix / Movimentações
+> formula DAX: %Pix= 'Movimentações'[Mov.Pix]/'Movimentações'[Movimentações]
