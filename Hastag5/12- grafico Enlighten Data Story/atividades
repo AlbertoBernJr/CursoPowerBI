@@ -1,0 +1,8 @@
+> usado para criar frases com variáveis que podem ser modificadas
+> pode substituir o uso de vários cartões
+> por os numeros em ordem que devem aparecer
+> arrastar as colunas para [data values] -> Movimentações + Mov.Pix + %Pix
+> adicionar txto -> [formatar seu visual] -> [visual] -> [story] -> digitar o texto em [text]
+> para chamar a variavel em ordem, usar [#]
+> o token para chamar variavel pode ser modificado em  [formatar seu visual] -> [visual] ->[data] -> modificar o simbolo de 
+[replacement token]
