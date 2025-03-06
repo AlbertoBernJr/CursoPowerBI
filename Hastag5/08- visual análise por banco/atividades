@@ -1,0 +1,14 @@
+> usar o gráfico [image grid]
+
+> as imagens serão usada como botões de filtro para todos os gráficos no dashboard
+
+> usando imagens do google -> botão direito na imagem -> [copiar endereço da imagem]
+
+> usando fotos que não estao no google -> site [imgBB] -> fazer upload das imagens -> em [codigos para incorporar], 
+selecionar [links diretos] -> copiar os links e colar em outra coluna chamada [imagens]
+  >> filtrar cada banco e colar os links ao lado
+
+> precisa ter o link das imagens em algum lugar 
+
+> imagens do mesmo tamanho -> [formatar seu visual] -> [visual] -> [settings] -> [render type] -> selecionar [weighted 
+circles]
