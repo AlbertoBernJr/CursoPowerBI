@@ -1,0 +1,11 @@
+> quantos % da receita vira lucro
+> formula DAX: Margem=[Lucro]/[TotalRecebimentos]
+> usar grafico [rosca] 
+> terá que criar outro calculo para saber o complemento a chegar em 100% = MargemAuxiliar
+
+> formula DAX: MargemAuxiliar= 1-[MargemLucro]
+>> [1] representa [100%]
+
+> coluna [MargemAuxiliar] para [Valores]
+
+> alterar o raio interno do gráfico [Rosca] -> [visual] -> [fatias] -> [espaçamento]
