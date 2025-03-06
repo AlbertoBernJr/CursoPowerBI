@@ -1,0 +1,5 @@
+> cada linha da tabela é uma transação feita -> deve-se contar o numero de linhas
+
+> contar o numero de linhas: [ COUNTROWS () ] da tabela [ movimentação ]
+
+> formula DAX: Movimentações=COUNTROWS("Movimentações")
