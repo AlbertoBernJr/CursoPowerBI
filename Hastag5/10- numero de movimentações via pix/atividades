@@ -1,0 +1,7 @@
+> calcular somente as movimentações do tipo [pix]
+> conta com condição -> [ CALCULATE() ]
+> formula DAX: 
+Mov.Pix= CALCULATE(
+	COUNTROWS('Movimentações'),
+	'Movimentações'[Forma Pagamento]="Pix"
+)
