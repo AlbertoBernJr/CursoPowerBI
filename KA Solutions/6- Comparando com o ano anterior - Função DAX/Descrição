@@ -1,0 +1,12 @@
+CALCULATE = realiza uma mudança de contexto -> mudar de cenário
+> criação e uma linha do tempo onde pode-se visualizar resultados anteriores e 
+  atuais
+
+Funções de inteligencia de dados temporais = permite viajar no tempo
+> SAMEPERIODLASTYEAR = voltar 1 ao para trás
+>> retorna uma tabela que contem as datas de 1 ano atrás, comparado com o 
+    parametro [date] especificado (Ex; data escolhida: Janeiro -> exibirá os 
+    resultados de janeiro do ano passado )
+
+DATEADD = pode-se viajar no tempo com mais datas (ano, trimestre, mes e dia)
+> permite viajar no passado e um pouco mais próximo do presente
