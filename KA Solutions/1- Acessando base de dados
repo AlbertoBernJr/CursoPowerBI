@@ -1,0 +1,14 @@
+power bi -> [pagina inicial] -> [obter dados] -> [pasta excel] -> [conectar] -> pasta dados -> [base_xlsx] -> [abrir] -> 
+[transformar dados] -> para deixar todos os valores de uma coluna em maiusculo -> seelcionar o cabeçalho da coluna para 
+selecionar todas as linhas -> botão direito -> [transformar] -> [maiusculo] -> [salvar e aplicar] -> esperar carregar
+ 
+Se a fonte dos dados for trocada, ir no power query -> lado direito ->  [etapas aplicadas] -> em [fontes] -> ir na engrenagem 
+que esta ao lado direito -> alterar a fonte de dados
+
+[carregar] = usado quando se sabe que a origem esta certa e não precisa de modificações
+
+[transformar dados] = se tiver alguma desconfiança de que os dados precisam ser arrumados
+
+[power query] = aplicativo para limpar/arrumar os dados -> permite tratamento ETL (extrair, tratar e carregar os dados) 
+
+Importante ter um arquivo [ layout ] para servir como base de padrão para a criação de outros arquivos mais complexos
