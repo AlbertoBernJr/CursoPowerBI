@@ -1,0 +1,8 @@
+Ajuda a entender onde está o que e para o que serve cada uma das infromações
+ 
+Criando tabela de medidas
+> [modo exibição de tabela] -> selecionar a tabela 
+  [ TDimensPed_TFatoProd_Intens_Pedido ] -> [pagina inicial] -> [inserir dados] -> 
+  nome: [ _Medidas ] (usar o [_] só para ficar no topo) -> clicar em [ Total Vendido 
+  Medida ] -> la em cima -> [ferramentas de medida] -> em [tabela inicial] -> 
+  selecionar: [ _Medidas ] -> excluir a [coluna 1] 
