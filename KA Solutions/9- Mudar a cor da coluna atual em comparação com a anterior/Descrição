@@ -28,3 +28,9 @@ Utilizando a função [ if ] - função condicional lógica
 
 Sempre que tiver um simbolo [ FX ] ao lado da cor, significa que pode ser usada 
   uma formatação condicional ou aplicar uma função para definir o valor
+
+Implementando a coloração condicional -> selecionar o gráfico -> 
+  [ painel de visualizações ] -> [ visual ] -> [ colunas ] -> [ cor ] -> 
+  simbolo [ FX ] -> em [ estilo de formato ] -> selecionar [ valor do 
+  campo ] -> em [ em que campo devemos basear isso ] -> selecionar 
+  [ _MedidasDeFormatação] -> [ _ComparativoVenda_AnoAnterior ]
