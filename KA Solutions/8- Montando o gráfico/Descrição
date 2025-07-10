@@ -1,0 +1,19 @@
+Gráfico [Colunas empilhadas e linha]
+> linha = representação do ano anterior
+> coluna = período atual
+
+[exibição de relatório] -> expandir [TDimens_Calendario] -> [Date] -> 
+  [Hierrarquia...] -> [gráfico colunas empilhadas e linha] -> eixo x: arrastar a 
+  coluna [mês] -> eixo y coluna: arrastar a coluna [Total Vendido Medida] da tabela 
+  [_Medidas] -> valor que eu vendi  em todos os anos -> eixo y da linha: arrastar a 
+  coluna [TotalVendido_AnoAnterior] 
+
+Definindo um segmentador para poder limitar a visão do gráfico a um ano específico 
+  -> clicar fora do gráfico -> gráfico [segmentação de dados] -> expandir 
+  [TDimens_Calendario] -> [Date] -> [Hierarquia...] -> arrastar a coluna [ano] para 
+  a parte de [campo] do gráfico
+
+Fazer com que o usuário so possa escolher 1 único ano -> editar o gráfico 
+  [segmentação de dados] -> selecionar o gráfico -> painel de [visualizações] ->  
+  [formatar seu visual] -> [visual] -> [configurações da segmentação] -> [estilo] 
+  -> selecionar [bloco] -> em [seleção], ativar [seleção única]
