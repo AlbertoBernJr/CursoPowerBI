@@ -1,0 +1,12 @@
+Medida [ SUMX(<tabela>, <expressão>)]
+> o valor fica concentrado num único local e, depois, será expandido
+> ocupa pouca memoria, processamento e vai expandindo a medida que o usuário 
+  solicita valores a ela
+
+Criando uma medida -> painel direito de [Dados] -> selecionar a tebela 
+  [TDimensPed_TFatoProd_Intens_Pedido] -> botao direito -> [nova medida] -> 
+  digitar:
+
+      Total Vendido Medida = 
+	      SUMX(TDimensPed_TFatoProd_Intens_Pedido, TDimensPed_TFatoProd_Intens_
+         Pedido[Preço 	Venda]*TDimensPed_TFatoProd_Intens_Pedido[Qtde.])
