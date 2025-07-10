@@ -1,0 +1,112 @@
+Esquema estrela = melhora o desempenho em cosultas e dashboards
+> a tabela principal (fato) fica no centro e as tabelas com detalhes (dimensoes0 ficam ao redor
+> tabela principal: guarda os dados mais importantes
+	  ex: vendas (valor, quantiadde)
+> tabela dimensoes: traz os detalhes da tabela principal
+	  ex: produtos (nome, categoria), clientes (nome, cidade), tempo (data, mes, ano), ...
+> uso: saber a quantidade (fato) que foi vendida do produto X (dimensão) na cidade Y (dimensão)
+
+Desativar relacionamentos criados automaticamente pelo power bi -> painel lateral esquerdo -> icone de [exibição de modelo] -> 
+[ pagina inicial ] -> [ gerenciar relações ] ->  selecionar o primeiro quadrado para selecionar todas as relações -> 
+[ excluir ] 
+
+Para se criar uma ligação/relacionamento, deve-se ter o mesmo tipo de dado nas 2 tabelas
+
+Tabela fato: Pedidos
+
+Criando uma relação/ligação entre as tabelas de forma segura:
+> [pagina inicial] -> [gerenciador de relações] -> [novo relacionamento] -> relacionamento entre a tabela [Pedidos] e 
+[Clientes] -> verificar que a coluna [Cliente] - Pedidos é compativel com a coluna [Código] - Clientes -> cardinalidade: 
+[muitos para um] - pode-se ter várias chamadas do lado de [Pedidos], mas só pode ter 1 resposta da tabela [Cliente] 
+
+1° relacionamento = Clientes [codigo] -> Pedidos [cliente] = 1 para muitos
+> 1 cliente pode fazer muitos pedidos
+> a tabela [Cliente] com menor numero de dados filtra a tabela [Codigo] com maior numero de dados
+
+A tabela [Itens pedido] é uma Dimensão de [Pedidos] e é Fato de [Produtos] -> [Produtos] esta detalhando o que foi pedido em 
+[itens Pedido]
+
+2° relacionamento = TFato_Pedidos[Form. Pagamento] -> TDimens_Forma_Pagamento[codigo] -> muitos para 1
+> 1 [codigo] tem muitas [formas de pagamento]
+
+3° relacionamento = TFato_Pedidos[loja] -> TDimens_Lojas[codigo] -> muitos para 1
+> 1 [codigo] tem várias [lojas]
+
+4° relacionamento = TFato_Pedidos[UF] -> TDimens_Estados[codigo] -> muitos para 1
+> 1 [codigo] tem várias [UF]
+
+Ao carregar o arquivo [Layout], onde só tem o nome das colunas, o powe Bi criou uma linha vazia dentro do arquivo -> 
+deve-se entrar no power query e remover essa linha -> ir na parte [modo exibição de tabela] -> [pagina inicial] -> 
+[transformar dados] -> canto esquerdo -> [outras consultas] -> [TFato_Pedidos] -> remover a coluna [nome da origem] -> 
+clicar no nome -> botao direito -> [remover] -> para remover todas as linhas vazias -> [pagina inicial] -> [reduzir linhas] -> 
+[remover linhas] -> [remover linhas em branco] -> ir em [TDimensPed_TFato_itens_pedido] -> remover a coluna [nome da origem] ->
+clicar no nome -> botao direito -> [remover] -> para aplicar -> [pagina inicial] -> [fechar e aplicar]
+
+Remover todas as colunas que não responderem as perguntas desejadas
+
+5° relacionamento = TFato_Pedidos[pedidos] -> TDimensPed_TFato_itens_pedido[pedidos] -> muitos para 1
+> 1 TFato_Pedidos[pedidos] tem várias TDimensPed_TFato_itens_pedido[pedidos] na nota fiscal
+
+6° relacionamento = TFato_Pedidos[vendendor] -> TDimens_Vendedor[código] -> muitos para 1
+> 1 TFato_Pedidos[vendedor] tem várias TDimens_Vendedor[código]
+
+7° relacionamento = TDimensPed_TFato_itens_pedido[produtos] -> Tdimens_Produtos[codigo] ->  muitos para 1
+> 1  TDimensPed_TFato_itens_pedido[produtos] tem várias Tdimens_Produtos[codigo]
+
+Ir no modo [exibição de tabela] e verificar se todas as colunas das planilhas estão com o tipo de dado certo -> selecionar a 
+planilha -> clicar no titulo de cada coluna -> verificar se o [tipo de dados] esta compatível com o conteúdo da coluna
+> planilha [TDimens_Produtos] -> coluna [Preço base] -> mudar tipo de dado para [numedo decimal] -> mostrar [2] casas decimais
+> a coluna [imagem] contem links da internet -> tem que mostrar ao Power BI que é um link e não texto -> em [categoria de 
+    dados], selecionar [URL da imagem]
+
+A tabela [ TDimens_Vendedores ] está com a coluna [ Vendedor ] e [ Loja ] juntas + o nome dos vendedores não estão na 
+formatação correta + categoria da coluna [fotos] tem que ser [URL da imagem]
+> selecionar o nome da coluna [foto] -> tipo de dados: [texto] -> categoria de dados: [URL da imagem]
+> deve-se separar as colunas + arrumar a formatação dos nomes
+> separando as colunas ->  [ pagina inicial ] -> [ transformar dados ] -> procurar pela planilha [ TDimens_Vendedor ] -> 
+    selecionar o titulo da coluna [ Vendedor_Loja ] -> botão direito -> [ dividir coluna ] -> [ por delimitador ] -> delimitador: 
+    [ personalizado ] + [ _ ] -> [ ok ] -> renomear as colunas para [ Vendedor ] + [ loja ]
+> formatação correta -> selecionar o titulo da coluna [ Vendedor ] -> botão direito -> [ transformar ] -> 
+    [ colocar cada palavra em letra maiúscula ] -> [ fechar e aplicar ]
+
+Função DAX - CALENDARAUTO()
+> Analisa todas as datas do seu modelo de dados, seleciona a data mais antiga e a mais nova para criar uma tabela da data 
+    mais antiga até a mais nova
+
+Criando uma tabela de calendário - tabela virtual = não foi obtida de um arquivo
+> Aba [exibição de modelo] -> [pagina inicial] -> [nova tabela] -> digitar: 
+      TDimens_Calendario =
+	      CALENDAR(
+		      min(TFato_Pedidos[Data Venda]),
+		      max(TFato_Pedidos[Data Venda])
+	      )
+
+> As maiores e menores datas são determinadas pela tabela [TFatos_Pedido] + coluna [Data Venda]
+    Ex) escolhendo um detrminado período para ser o máximo limite
+	    min(TFatos_Pedidos[Data Venda]),
+	    date(2025,12,25)
+     
+  Ex) escolhendo o dia de hoje para determinar o limite
+	    min(TFatos_Pedidos[Data Venda]),
+	    today()
+
+A aba [exibição de modelos] mostra como as tabelas estão relacionadas/ligadas para criar os visuais
+
+Relacionando a tabela [TFato_Pedidos(Data Venda)] com [TDimens_Calendario(Date)] = muitos para um (*:1)
+> muitos [Data Venda] para 1 [Date]
+> para fazer o visual de [Quantidade de produtos] vendidos por [ano]
+
+Juntando/Mesclando a tabela [TDimensPed_TFatoProd_Intens_Pedido] com [TDimens_Produto]
+> [exibição de modelo] -> [pagiina inicial] -> [transformar dados] -> selecionar a tabela [TDimensPed_TFatoProd_Intens_Pedido]
+  -> [pagina inicial] -> [combinar] -> [mesclar concusltas] -> [mesclar consultas] -> 
+  [TDimensPed_TFatoProd_Intens_Pedido(produto)] ->  [TDimens_Produto(codigo)] -> [ok] -> 
+  sera criada uma nova coluna com o nome dos produtos ligados ao codigo -> coluna [TDimens_Produto] -> cliacr no icone ao lado 
+  direito do nome -> deixar somente a opção [produto] selecionado -> esta dizendo que quer trazer somente o nome do produto 
+  para a tabela
+> pode-se tirar o relacionamento feito
+> gerou um peso maior na base porque o nome dos produtos foram repetidos
+> o ideal é não mesclar as tabelas
+
+Nova relação entre a tabela  [TDimensPed_TFatoProd_Intens_Pedido] com [TDimens_Produto]
+> [exibição de modelo] -> [pagina inicial] -> [gerenciar relações] -> [TDimensPed_TFatoProd_Intens_Pedido(produto)] com 
+    [TDimens_Produto(codigo)] -> cardinalidade: [muitos para um (*:1)] -> [OK] 
