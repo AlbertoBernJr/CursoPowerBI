@@ -1,0 +1,8 @@
+Botão direito na tabela [Medias] -> [nova medida] -> digitar:
+    TotalVendido_AnoAnterior = 
+	    CALCULATE([Total Vendido Medida],
+		    SAMEPERIODLASTYEAR(TDimens_Calendario[Date])
+	    )
+
+> CALCULATE([Total Vendido Medida] = valor correspondente ao ano atual
+> SAMEPERIODLASTYEAR(TDimens_Calendario[Date]) = valor do ano anterior
