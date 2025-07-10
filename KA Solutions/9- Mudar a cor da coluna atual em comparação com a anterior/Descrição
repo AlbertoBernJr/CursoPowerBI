@@ -1,0 +1,30 @@
+Clicar no gráfico -> [formatar seu visual] -> [visual] -> [colunas] -> [cor] -> 
+  [mais cores] -> escolher a cor [verde] -> pegar o codigo HEX [ #1FB40B ] -> 
+  escolher a cor [vermelha] -> pegar o codigo HEX [ #CC0606 ] -> criando uma 
+  nova tabela de medidas para adicionar as cores -> [pagina inicial] -> 
+  [inserir dados] ->  [ _MedidaDeFormatacao ]
+  
+> adicionando a cor verde (positiva) -> painel lateral direito -> selecionar a 
+    medida [ _MedidaDeFormatacao ] -> botao direito -> [nova medida] -> 
+    [ CorPositiva = "#1FB40B" ]
+    
+> adicionando a cor vermelha (negativa) -> painel lateral direito -> selecionar a 
+    medida [ _MedidaDeFormatacao ] -> botao direito -> [nova medida] -> 
+    [ CorNegativa = "#CC0606" ]
+    
+> fazendo a comparação de venda com o ano anterior -> painel lateral direito -> 
+    selecionar a medida [ _MedidaDeFormatacao ] -> botao direito -> 
+    [nova medida] -> [ ComparativoVenda_AnoAnterior =
+    if([Total Vendido Medida]<[TotalVendido_AnoAnterior],[CorNegativa],
+    [CorPositiva]) ]
+    
+	>> comprar o total vendido com o ano anterior
+	>> se o valor for menor que o do ano anterior, adicionará a cor vermelha 
+       (CorNegativa)
+	>> se o valor for maior que a do ano anterior, adicionará a cor verde 
+       (CorPositva)
+
+Utilizando a função [ if ] - função condicional lógica
+
+Sempre que tiver um simbolo [ FX ] ao lado da cor, significa que pode ser usada 
+  uma formatação condicional ou aplicar uma função para definir o valor
