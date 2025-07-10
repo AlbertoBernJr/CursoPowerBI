@@ -1,0 +1,15 @@
+Coluna = gera armazenamento, processa todas as linhas criadas e usará mais 
+memória para guardar todas as linhas solicitadas
+
+Na tabela [TDimensPed_TFatoProd_Intens_Pedido] -> tem as colunas [Preço venda] e 
+  [Qtde](quantidade) -> fazer: [Preço Venda X Qtde]
+> pode-se usar a [coluna calculada] ou [medida]
+> [Modo exibição de tabela] -> [pagina inicial] -> [nova coluna] -> nome: 
+    [Total Vendido] -> digitar:
+
+Total Vendido = TDimensPed_TFatoProd_Intens_Pedido[Preço Venda]*TDimensPed_TFato
+  Prod_Intens_Pedido[Qtde.]
+
+Configurando o [R$] para a nova coluna -> selecionar toda a nova coluna -> 
+  [ferramentas de coluna] -> icone de [$] -> selecionar o [R$] -> mudar o numero 
+  [0] para [2] casas decimais
